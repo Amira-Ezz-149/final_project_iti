@@ -99,7 +99,7 @@ class _LessonDetailsState extends State<LessonDetails> {
               SizedBox(
                 height: 15.0,
               ),
-              GradientContainer2(),
+              GradientContainer(),
               SizedBox(
                 height: 15.0,
               ),

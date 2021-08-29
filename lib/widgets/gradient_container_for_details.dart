@@ -4,16 +4,16 @@ import 'package:iti_final/constants.dart';
 import 'package:iti_final/widgets/lesson_details.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class GradientContainer2 extends StatefulWidget {
-  GradientContainer2({this.onPressed});
+class GradientContainer extends StatefulWidget {
+  GradientContainer({this.onPressed});
 
   Function onPressed;
 
   @override
-  _GradientContainer2State createState() => _GradientContainer2State();
+  _GradientContainerState createState() => _GradientContainerState();
 }
 
-class _GradientContainer2State extends State<GradientContainer2> {
+class _GradientContainerState extends State<GradientContainer> {
   bool clicked = false;
 
   @override
@@ -48,11 +48,8 @@ class _GradientContainer2State extends State<GradientContainer2> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                clicked
-                    ? Column(
+            clicked
+                ? Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                         const Text('External Materials', style: kTextOfResult),
@@ -75,7 +72,6 @@ class _GradientContainer2State extends State<GradientContainer2> {
                             },
 
                           ),
-
                           //===================================== second container
                           //===============================================================
                           SizedBox(
@@ -96,9 +92,7 @@ class _GradientContainer2State extends State<GradientContainer2> {
                           ),
                         ],
                       )
-                    : const Text('External Materials', style: kTextOfResult),
-              ],
-            ),
+                : const Text('External Materials', style: kTextOfResult),
             SizedBox(
               width: 10.0,
             ),
