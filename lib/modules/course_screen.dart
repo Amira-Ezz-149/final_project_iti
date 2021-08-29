@@ -26,7 +26,7 @@ class CourseScreen extends StatelessWidget {
       ),
 
       body: Container(
-        padding: EdgeInsets.all(25.0),
+        padding: const EdgeInsets.all(25.0),
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(

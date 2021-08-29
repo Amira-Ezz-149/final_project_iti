@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iti_final/for_test.dart';
 import 'package:iti_final/modules/course_screen.dart';
-import 'package:iti_final/widgets/bottom_nav_bar.dart';
-import 'modules/bla_screen.dart';
 import 'widgets/lesson_details.dart';
 
 

@@ -22,7 +22,7 @@ class _GradientContainer2State extends State<GradientContainer2> {
       onTap: widget.onPressed,
       child: AnimatedContainer(
         duration: Duration(),
-        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 15),
         width: MediaQuery.of(context).size.width,
         height: clicked ? 320 : 100,
         decoration: BoxDecoration(
@@ -55,7 +55,7 @@ class _GradientContainer2State extends State<GradientContainer2> {
                     ? Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('External Materials', style: kTextOfResult),
+                        const Text('External Materials', style: kTextOfResult),
                           SizedBox(
                             height: 10,
                           ),
@@ -96,7 +96,7 @@ class _GradientContainer2State extends State<GradientContainer2> {
                           ),
                         ],
                       )
-                    : Text('External Materials', style: kTextOfResult),
+                    : const Text('External Materials', style: kTextOfResult),
               ],
             ),
             SizedBox(

@@ -18,12 +18,11 @@ class LessonDetails extends StatefulWidget {
 class _LessonDetailsState extends State<LessonDetails> {
   @override
   Widget build(BuildContext context) {
-    bool clicked = false;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.blue.withOpacity(0.0),
-        title: Text(
+        title: const Text(
           'Lesson 10 ',
           style: TextStyle(
               color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
@@ -34,7 +33,7 @@ class _LessonDetailsState extends State<LessonDetails> {
         elevation: 0.0,
       ),
       body: Container(
-        padding: EdgeInsets.all(25.0),
+        padding: const EdgeInsets.only(left:25.0, right:25.0, bottom: 25.0, top: 10.0),
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
@@ -152,7 +151,7 @@ class QuizButton extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
-        padding: EdgeInsets.symmetric(vertical: 10),
+        padding: const EdgeInsets.symmetric(vertical: 10),
         width: MediaQuery.of(context).size.width / 3.5,
         height: 35,
         decoration: BoxDecoration(

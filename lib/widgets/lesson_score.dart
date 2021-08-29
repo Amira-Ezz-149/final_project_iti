@@ -4,8 +4,8 @@ import 'package:iti_final/widgets/lesson_details.dart';
 class LessonScore extends StatefulWidget {
 
    LessonScore({this.lessonNumber, this.percentage, this.onPressed, this.lecOrSec, this.lecture, this.section});
-  int lessonNumber = 1;
-  int percentage = 50;
+  int lessonNumber ;
+  int percentage ;
   String lecture, section, lecOrSec;
   Function onPressed;
 
@@ -21,7 +21,7 @@ class _LessonScoreState extends State<LessonScore> {
     return
       AnimatedContainer(
         duration: Duration(),
-        padding: EdgeInsets.symmetric(horizontal:20.0, vertical: 15),
+        padding: const EdgeInsets.symmetric(horizontal:20.0, vertical: 15),
         width: MediaQuery.of(context).size.width,
         height: clicked? 140:95,
         decoration: BoxDecoration(
